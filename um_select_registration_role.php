@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:     Ultimate Member - Select Registration Role
- * Description:     Extension to Ultimate Member for selecting user role at registration based on a dropdown field content.
+ * Description:     Extension to Ultimate Member for selecting user role at registration based on any dropdown field content.
  * Version:         1.0.1
  * Requires PHP:    7.4
  * Author:          Miss Veronica
