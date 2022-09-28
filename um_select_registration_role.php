@@ -33,14 +33,17 @@ function um_registration_set_extra_data_role_selection( $user_id, $args ) {
                     $role_selections = explode( "\n", UM()->options()->get( 'role_selections_list' ));
 
                     foreach( $role_selections as $role_selection ) {
-                        $selection = explode( ':', $role_selection );
 
-                        if( $args[$field] == trim( $selection[0] )) {
-                            $wp_user_object = new WP_User( $user_id );
-                            $wp_user_object->set_role( trim( $selection[1] ));
-                            UM()->user()->remove_cache( $user_id );
-                            um_fetch_user( $user_id );
-                            return;
+                        $selection = explode( ':', $role_selection );
+                        if( count( $selection ) == 2 ) {
+
+                            if( $args[$field] == trim( $selection[0] )) {
+                                $wp_user_object = new WP_User( $user_id );
+                                $wp_user_object->set_role( trim( $selection[1] ));
+                                UM()->user()->remove_cache( $user_id );
+                                um_fetch_user( $user_id );
+                                return;
+                            }
                         }
                     }
                 }
@@ -76,3 +79,4 @@ function um_settings_structure_customer_role_selection( $settings ) {
 
     return $settings;
 }
+
