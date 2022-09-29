@@ -2,13 +2,13 @@
 /**
  * Plugin Name:     Ultimate Member - Select Registration Role
  * Description:     Extension to Ultimate Member for selecting user role at registration based on any dropdown field content.
- * Version:         1.0.1
+ * Version:         1.0.2
  * Requires PHP:    7.4
  * Author:          Miss Veronica
  * License:         GPL v2 or later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
  * Author URI:      https://github.com/MissVeronica
- * Text Domain:     um-visitors
+ * Text Domain:     ultimate-member
  * Domain Path:     /languages
  * UM version:      2.5.0
  */
